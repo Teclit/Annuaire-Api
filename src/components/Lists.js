@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 const Lists = ({organisme, telephone, link}) => {
     return (
         <li>
-            <h3><a href={link}>{organisme}</a></h3>
+            <h3><a href={link} target='_blank' rel="noreferrer">{organisme}</a></h3>
             <p>Téléphone: {telephone} </p>
             
         </li>

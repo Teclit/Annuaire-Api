@@ -71,7 +71,7 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 30px auto;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: rgb(5, 5, 5);
 }
@@ -101,6 +101,10 @@ input[type="reset"] {
   background-color:#000;
 }
 
+input:hover{
+  transform: scale(1.2);
+}
+
 .btn {
   display: inline-block;
   border: none;
@@ -119,13 +123,8 @@ input[type="reset"] {
 }
 
 .btn:hover{
-  transform: scale(1.1);
-}
-
-.btn:active {
   transform: scale(0.98);
 }
-
 
 .containerVide {
   background: #f4f4f4;

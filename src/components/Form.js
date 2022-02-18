@@ -37,20 +37,16 @@ const Form =({ListesDeapartment, ListesOrganismes, onSearch, onEmpty})=> {
                     ))}
                 </datalist>
 
-            
+                
                 <input 
                     list="organisme" name="organisme" 
                     placeholder="Select organisme" className='selectbtn' 
                     onChange={(e) => setOrgChoisi(e.target.value)} 
                 />
                 <datalist id="organisme">
-                    <option value="pole_emploi">Pôle emploi</option>
-                    <option value="ccas">Centre communal d'action sociale</option>
-                    <option value="caf">Caisse d’allocations familiales (CAF)</option>
-                    <option value="mairie">Mairie</option>
-                    <option value="prefecture">Préfecture</option>
-                    <option value="ta">Tribunal administratif</option>
-
+                    {ListesOrganismes.map((organisme)=>(
+                        <option key={organisme.key} value={organisme.value}>{organisme.text}</option>
+                    ))}
                 </datalist>
 
             <input type='submit' value='Lancer la recherche' className='btn' />
@@ -58,5 +54,28 @@ const Form =({ListesDeapartment, ListesOrganismes, onSearch, onEmpty})=> {
         </form>
     )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default Form

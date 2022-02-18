@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: rgb(196, 200, 202);
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 40px;
+  color: #000;
+}
+
+.container {
+  max-width: 95%;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 100%;
+  border: 1px solid steelblue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sectionBar form{
+  display: flex;
+  padding: 0 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(5, 5, 5);
+}
+
+.selectbtn { 
+  width: 250px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 0px #d1d1e0;
+}
+
+.sectionList ul{
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(5, 5, 5);
+}
+
+.sectionList li {
+  background: #fff;
+  margin: 10px;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.sectionList li:hover {
+  background: rgb(64, 98, 172);
+  color: #fff;
+  box-shadow: 5px 5px 8px 1px #fff;
+}
+.selectbtn:focus {
+  outline:none;
+
+}
+
+input[type="submit"] {
+  background-color: rgb(64, 98, 172);
+}
+
+input[type="reset"] {
+  background-color:#000;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  color: #fff; 
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+
+.containerVide {
+  background: #f4f4f4;
+  width: 100%;
+  text-align: center;
+  margin: 5px;
+  padding: 20px 20px;
+  cursor: pointer;
+  box-shadow: 5px 5px 8px 1px rgb(64, 98, 172);
+}
